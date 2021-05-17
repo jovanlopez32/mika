@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Style Sheet-->
-    <link rel="stylesheet" href="css/home_style.css">
+    <link rel="stylesheet" href="css/login_style.css">
     <link rel="stylesheet" href="css/footer_style.css">
     <link rel="stylesheet" href="css/navbar_style.css">
     <!--Boopstrap Icons-->
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <title>Home</title>
+    <title>Account - Mika's</title>
 </head>
 
 <body>
@@ -42,29 +42,63 @@
         </div>
     </nav>
 
-    <div class="banner">
-        <div class="center">
-            <h1>This a text</h1>
-            <h2>Second text</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat fuga, illo magnam, deserunt molestias
-                possimus minus doloribus dolorem soluta necessitatibus ex asperiores eum, illum sint debitis maxime
-                tenetur odio maiores?
-            </p>
-        </div>
-    </div>
+
     <div class="section-cont">
         <div class="content">
-            <h1>mikas</h1>
-            <h2>this a large text</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil vero laudantium minima
-                architecto iure, perspiciatis maiores non autem molestiae modi temporibus explicabo ipsam ab
-                consequatur accusantium ut corporis id.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque accusamus, rem natus aperiam
-                iusto odio enim quos voluptate eum illum ab repellat sit explicabo quaerat dolor officiis, quas
-                soluta! Tempora.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi reprehenderit nemo aperiam
-                consequuntur, a, eaque alias quos aliquid at eum eligendi nisi eveniet, perferendis asperiores
-                voluptatum? Impedit deleniti libero est.</p>
+            <div class="login-content">
+                <form action="" method="post" class="singin">
+
+
+                    <h1>Sign In</h1>
+
+                    <label for="emailuser">
+                        <h3>email</h3>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw">
+                        <h3>password</h3>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">SIGN IN</button>
+
+                    <p>Forgot your<a href="#">password?</a></p>
+                    <img src="img/loginundraw.png" style="width: 250px; height: 250px; margin-top: 50px;" alt="">
+                </form>
+
+
+
+                <form action="" method="post" class="register">
+                    <h1>Register</h1>
+
+                    <label for="uname">
+                        <h3>first name</h3>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="uname">
+                        <h3>last name</h3>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw">
+                        <h3>email</h3>
+                    </label>
+                    <input type="email" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw">
+                        <h3>password</h3>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">CREATE</button>
+
+                    <p>Forgot <a href="#">password?</a></p>
+
+                </form>
+
+            </div>
         </div>
     </div>
 
@@ -122,6 +156,7 @@
 
 
     <script src="js/app_burguermenu.js"></script>
+
 </body>
 
 </html>

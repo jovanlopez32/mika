@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFCF2;
+    font-weight: 600;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*COLORS  #FFFCF2 BLANCO          #CCC5B9 GRIS CLARO          #403D39 GRIS NORMAL         #252422 GRIS OSCURO         #EB5E28 NARANJA*/
+
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding:  0 30px;
+}
+
+
+.banner {
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/374825/pexels-photo-374825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner  .center {
+    color: #FFFCF2;
+    width: 50%;
+    padding: 150px;
+}
+
+.section-cont {
+    padding: 60px 0;
+}
+
+.section-cont p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+
+
+

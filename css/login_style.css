@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Poppins', sans-serif; 
+    
+}
+
+body {
+    color: #252422;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFCF2;
+    font-weight: 600;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+/*COLORS  #FFFCF2 BLANCO          #CCC5B9 GRIS CLARO          #403D39 GRIS NORMAL         #252422 GRIS OSCURO         #EB5E28 NARANJA*/
+
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding:  0 30px;
+}
+
+
+.banner {
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/374825/pexels-photo-374825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner  .center {
+    color: #FFFCF2;
+    width: 50%;
+    padding: 150px;
+}
+
+.section-cont {
+    padding: 40px 0;
+}
+
+.section-cont p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.login-content {
+    display: flex;
+    margin: 80px 0px;
+    justify-content: space-evenly;
+}
+
+.login-content h1 {
+    padding-bottom: 30px;
+}
+
+.singin {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 80px;
+}
+
+.login-content a{
+    color: #403D39;
+}
+
+/*COLORS  #FFFCF2 BLANCO          #CCC5B9 GRIS CLARO          #403D39 GRIS NORMAL         #252422 GRIS OSCURO         #EB5E28 NARANJA*/
+
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 80px;
+}
+
+input {
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 35px;
+}
+
+button {
+    background-color: #EB5E28;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+
+  @media (max-width: 868px) {
+    .login-content {
+        flex-direction: column;
+    }
+
+    .register {
+        padding-top: 100px;
+    }
+  }
+
