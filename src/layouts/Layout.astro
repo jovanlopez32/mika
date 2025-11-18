@@ -16,7 +16,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <title>{title}</title>
   </head>
   <body>
@@ -29,29 +29,40 @@ const { title } = Astro.props;
       }
 
       :root {
-        --color-primary: #2D3142;
-        --color-secondary: #EF8354;
-        --color-accent: #4F5D75;
-        --color-background: #FFFFFF;
-        --color-background-alt: #F8F9FA;
-        --color-text: #2D3142;
-        --color-text-light: #6B7280;
+        --color-primary: #000000;
+        --color-secondary: #ffffff;
+        --color-accent: #0066FF;
+        --color-text: #000000;
+        --color-text-light: #666666;
+        --color-border: #E5E5E5;
+        --spacing-xs: 0.5rem;
+        --spacing-sm: 1rem;
+        --spacing-md: 2rem;
+        --spacing-lg: 4rem;
+        --spacing-xl: 6rem;
+        --spacing-2xl: 8rem;
+        --spacing-3xl: 12rem;
       }
 
       html {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
 
       body {
-        background-color: var(--color-background);
+        background-color: var(--color-secondary);
         color: var(--color-text);
         line-height: 1.6;
+        font-size: 18px;
+        font-weight: 400;
       }
 
       h1, h2, h3, h4, h5, h6 {
-        font-weight: 600;
-        line-height: 1.2;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
       }
 
       a {
@@ -62,6 +73,11 @@ const { title } = Astro.props;
       button {
         cursor: pointer;
         font-family: inherit;
+      }
+
+      ::selection {
+        background-color: var(--color-accent);
+        color: white;
       }
     </style>
   </body>
