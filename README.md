@@ -31,6 +31,8 @@ npm run preview
 - 🎯 Sin sombras ni bordes (diseño limpio)
 - ⚡ Optimizado para rendimiento
 - 🐶 Enfocado en mascotas (perros y gatos)
+- 📝 Blog con Content Collections y Markdown
+- 🏷️ Sistema de tags y posts relacionados
 
 ## 📄 Estructura
 
@@ -39,10 +41,16 @@ npm run preview
 ├── public/
 │   └── images/         # Imágenes del sitio
 ├── src/
+│   ├── content/
+│   │   ├── blog/       # Artículos del blog en Markdown
+│   │   └── config.ts   # Configuración de Content Collections
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
-│       └── index.astro # Página principal
+│       ├── blog/
+│       │   ├── [slug].astro  # Página de artículo individual
+│       │   └── index.astro   # Listado de artículos
+│       └── index.astro       # Página principal
 ├── astro.config.mjs
 ├── package.json
 └── tsconfig.json
@@ -50,11 +58,49 @@ npm run preview
 
 ## 🌟 Secciones
 
+### Landing Page
 - **Hero** - Presentación del producto
 - **Beneficios** - Ventajas nutricionales
 - **Modo de uso** - Instrucciones simples
 - **Testimonios** - Historias de clientes
 - **Contacto** - Información de contacto
+
+### Blog
+- **Listado de artículos** - Vista de todos los posts
+- **Artículos individuales** - Contenido completo en Markdown
+- **Posts relacionados** - Sugerencias por tags
+- **Navegación integrada** - Acceso desde cualquier página
+
+## 📝 Artículos del Blog
+
+El sitio incluye 5 artículos informativos sobre nutrición de mascotas:
+
+1. **Beneficios de la Alimentación Natural** - Ventajas de una dieta natural para perros y gatos
+2. **10 Señales de Mala Nutrición** - Cómo identificar deficiencias nutricionales
+3. **El Hígado: Superalimento Natural** - Beneficios del hígado para mascotas
+4. **5 Pasos para Mejorar la Alimentación** - Guía práctica y accionable
+5. **Tendencias en Nutrición 2025** - El futuro de la alimentación para mascotas
+
+### Agregar Nuevos Artículos
+
+Para crear un nuevo artículo:
+
+1. Crea un archivo `.md` en `src/content/blog/`
+2. Agrega el frontmatter con la metadata:
+
+```markdown
+---
+title: "Título del Artículo"
+description: "Descripción breve"
+pubDate: 2024-11-15
+author: "Equipo Mikas Food"
+tags: ["nutrición", "salud"]
+---
+
+Tu contenido aquí en Markdown...
+```
+
+3. El artículo aparecerá automáticamente en `/blog`
 
 ## 📧 Contacto
 
