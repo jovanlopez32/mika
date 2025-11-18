@@ -1,0 +1,68 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mikas Food - Sazonador natural de hígado para perros y gatos" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/images/mika-logo.png" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --color-primary: #2D3142;
+        --color-secondary: #EF8354;
+        --color-accent: #4F5D75;
+        --color-background: #FFFFFF;
+        --color-background-alt: #F8F9FA;
+        --color-text: #2D3142;
+        --color-text-light: #6B7280;
+      }
+
+      html {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--color-background);
+        color: var(--color-text);
+        line-height: 1.6;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+        line-height: 1.2;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      button {
+        cursor: pointer;
+        font-family: inherit;
+      }
+    </style>
+  </body>
+</html>
